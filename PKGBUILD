@@ -6,8 +6,8 @@ arch=('any')
 url="https://github.com/benoitfragit/pocketVox"
 license=('GPLv3')
 groups=()
-depends=()
-makedepends=() # 'git'
+depends=('gstreamer')
+makedepends=( 'git' ) 
 checkdepends=()
 optdepends=()
 provides=()
@@ -21,12 +21,12 @@ source=("git://github.com/benoitfragit/pocketVox.git")
 _pythondir="$pkgdir/usr/lib/python2.7/site-packages"
 md5sums=('SKIP') #generate with 'makepkg -g'
 build() {
-        cd "$srcdir/pocketvox/"
+        cd "$srcdir/pocketVox/"
         ./autogen.sh --prefix=/usr PYTHON=/usr/bin/python2
         make
 }
 package() {
-          cd "$srcdir/pocketvox/"
+          cd "$srcdir/pocketVox/"
           install -d $_pythondir
           PYTHONPATH=$_pythondir make DESTDIR="$pkgdir" install
           install -d "$pkgdir/usr/share/licenses/$pkgname"
