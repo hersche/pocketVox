@@ -109,7 +109,7 @@ introspection_sources = $(libpocketvox_1_0_la_SOURCES)
 Pocketvox-1.0.gir: libpocketvox-1.0.la
 Pocketvox_1_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gst-0.10 Gtk-3.0 Gdk-3.0 Notify-0.7 AppIndicator3-0.1
 Pocketvox_1_0_gir_CFLAGS = $(AM_CPPFLAGS)
-Pocketvox_1_0_gir_PACKAGES = gtk+-3.0 gdk-3.0 gobject-2.0 glib-2.0 appindicator3-0.1 libnotify pocketsphinx gstreamer-0.10
+Pocketvox_1_0_gir_PACKAGES = gtk+-3.0 gdk-3.0 gobject-2.0 glib-2.0 appindicator3-0.1 libnotify pocketsphinx gstreamer-0.14
 Pocketvox_1_0_gir_LIBS = libpocketvox-1.0.la
 Pocketvox_1_0_gir_FILES = $(introspection_sources)
 Pocketvox_1_0_gir_NAMESPACE = Pocketvox
