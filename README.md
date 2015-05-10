@@ -96,7 +96,7 @@ Now we are going to install other dependancies:
 
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get install libglib2.0-0 libgirepository-1.0.1 libgirepository1.0-dev libgstreamer-plugins-base0.14-0 libgstreamer-plugins-bad0.14-0 gir1.2-gstreamer-0.14 gir1.2-appindicator3-0.1 libappindicator3-1 libappindicator3-dev libespeak-dev libespeak1 libnotify-dev gir1.2-gtk-3.0 libgtk-3-0 gobject-introspection gtk-doc-tools libgstreamer-plugins-base0.14-dev libgstreamer0.14-dev libgstreamer0.14-0 gstreamer0.14-alsa python-dev python-pip bison
+    sudo apt-get install libglib2.0-0 libgirepository-1.0.1 libgirepository1.0-dev libgstreamer-plugins-base0.14-0 libgstreamer-plugins-bad0.14-0 gir1.2-gstreamer-0.10 gir1.2-appindicator3-0.1 libappindicator3-1 libappindicator3-dev libespeak-dev libespeak1 libnotify-dev gir1.2-gtk-3.0 libgtk-3-0 gobject-introspection gtk-doc-tools libgstreamer-plugins-base0.14-dev libgstreamer0.14-dev libgstreamer0.14-0 gstreamer0.14-alsa python-dev python-pip bison
 
 
 **BUILD THE PROJECT FROM SOURCE**
