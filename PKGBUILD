@@ -3,7 +3,7 @@ pkgver=20150507
 pkgrel=1
 pkgdesc="pocket vox speech recognition."
 arch=('any')
-url="https://github.com/benoitfragit/pocketVox"
+url="https://github.com/sonar-gnu-linux/pocketVox"
 license=('GPLv3')
 groups=()
 depends=('gstreamer')
@@ -17,7 +17,7 @@ backup=()
 options=()
 install=
 changelog=
-source=("git://github.com/benoitfragit/pocketVox.git")
+source=("git://github.com/sonar-gnu-linux/pocketVox.git")
 _pythondir="$pkgdir/usr/lib/python2.7/site-packages"
 md5sums=('SKIP') #generate with 'makepkg -g'
 build() {
