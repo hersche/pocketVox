@@ -5,7 +5,8 @@ m4_define([pocketvox_version],
         [pocketvox_major.pocketvox_minor.pocketvox_micro])
 
 
-AC_CONFIG_MACRO_DIR(m4)
+AC_CONFIG_MACRO_DIRS([build/autotools])
+#AC_CONFIG_MACRO_DIR(m4)
 
 # autoconf
 AC_INIT([pocketvox],[pocketvox_version])

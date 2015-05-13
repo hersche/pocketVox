@@ -22,7 +22,11 @@ _pythondir="$pkgdir/usr/lib/python2.7/site-packages"
 md5sums=('SKIP') #generate with 'makepkg -g'
 build() {
         cd "$srcdir/pocketVox/"
+	#autoreconf -fvi
+	aclocal --force -I build/autotools
+	automake -i
         ./autogen.sh --prefix=/usr PYTHON=/usr/bin/python2
+	
         make
 }
 package() {
