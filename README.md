@@ -1,3 +1,41 @@
+GNU Sonar Arch Linux
+====================
+
+https://github.com/sonar-gnu-linux/pocketVox
+
+Here is how to install this using arch.
+
+* using aurget
+    git clone git@github.com:pbrisbin/aurget.git
+
+* prereqs
+
+    ./aurget -S --deps libdbusmenu-gtk2
+    
+    ./aurget -S --deps libindicator-gtk3
+    
+    ./aurget -S --deps libappindicator-gtk2
+    
+    ./aurget -S --deps libindicator-gtk2
+    
+    ./aurget -S --deps libappindicator-gtk3
+
+* deps
+
+Get the the PKGBUILD files from https://github.com/sonar-gnu-linux/pkgbuilds
+
+which have references to :
+
+*pocketsphinx* https://github.com/sonar-gnu-linux/pocketsphinx
+
+*sphinxbase* https://github.com/sonar-gnu-linux/sphinxbase
+
+use the makepkg on those packages.
+
+* and then building with :
+
+    git clone git@github.com:sonar-gnu-linux/pocketVox.git
+    makepkg
 
 **POCKETVOX**
 =============
